@@ -5,6 +5,7 @@ import Register from "./components/Register.vue";
 import Futsal from "./views/futsal/Futsal.vue";
 import Role from "./views/role/Role.vue";
 import Event from "./views/event/Event.vue";
+import FormJoin from "./views/FormJoin.vue";
 import EditFutsal from "./views/futsal/Edit.vue";
 import EditRole from "./views/role/EditRole.vue";
 // lazy-loaded
@@ -42,6 +43,10 @@ const routes = [
   {
     path: "/event",
     component: Event,
+  },
+  {
+    path: "/formjoin",
+    component: FormJoin,
   },
   {
     path: "/login",
