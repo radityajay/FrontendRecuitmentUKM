@@ -96,7 +96,7 @@ export default {
   },
   mounted() {
     axios
-      .get("http://localhost:8080/api/recuitmens/ukmAll?ukmName=HIPMI")
+      .get("http://localhost:8080/api/recuitmens/ukmAll?ukmName=HIPMI PT")
       .then((response) => this.setRecuitmens(response.data))
       .catch((error) => console.log(error));
 
