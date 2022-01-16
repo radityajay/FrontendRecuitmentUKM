@@ -5,6 +5,7 @@ import Register from "./components/Register.vue";
 import Futsal from "./views/futsal/Futsal.vue";
 import Dance from "./views/dance/Dance.vue";
 import Gmpa from "./views/gmpa/Gmpa.vue";
+import Ec from "./views/ec/Ec.vue";
 import Esprime from "./views/esprime/Esprime.vue";
 import UKM from "./views/ukm/Ukm.vue";
 import Event from "./views/events/Event.vue";
@@ -13,6 +14,7 @@ import EditUkm from "./views/ukm/Edit.vue";
 import EditEvent from "./views/events/Edit.vue";
 import DelUkm from "./views/ukm/Delete.vue";
 import DelFutsal from "./views/futsal/Delete.vue";
+import DelEc from "./views/ec/Delete.vue";
 import DelGmpa from "./views/gmpa/Delete.vue";
 import DelDance from "./views/dance/Delete.vue";
 import DelEsprime from "./views/esprime/Delete.vue";
@@ -38,6 +40,10 @@ const routes = [
   {
     path: "/futsal",
     component: Futsal,
+  },
+  {
+    path: "/ec",
+    component: Ec,
   },
   {
     path: "/gmpa",
@@ -66,6 +72,10 @@ const routes = [
   {
     path: "/delfutsal/:id",
     component: DelFutsal,
+  },
+  {
+    path: "/delec/:id",
+    component: DelEc,
   },
   {
     path: "/delgmpa/:id",
