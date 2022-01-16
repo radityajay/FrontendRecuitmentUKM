@@ -1,4 +1,7 @@
 <template>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <div id="app">
     <nav class="container-fluid navbar navbar-expand navbar-dark bg-dark px-5" style="background-color: #021729 !important">
       <a href="/" class="navbar-brand">
@@ -81,3 +84,8 @@ export default {
   }
 };
 </script>
+<style>
+body{
+  font-family: 'Poppins', sans-serif !important;
+}
+</style>

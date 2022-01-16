@@ -7,7 +7,7 @@
         <div
           class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
         >
-          <h1 class="h2">FUTSAL</h1>
+          <h1 class="h2">GMPA</h1>
         </div>
 
         <div class="container">
@@ -35,7 +35,7 @@
               <td>{{ recuitmen.nameUkm }}</td>
               <td>
                 <router-link class="btn btn-danger me-2"
-                :to="'/delfutsal/' + recuitmen.id">
+                :to="'/delgmpa/' + recuitmen.id">
                   Delete
                 </router-link>
               </td>
@@ -96,7 +96,7 @@ export default {
   },
   mounted() {
     axios
-      .get("http://localhost:8080/api/recuitmens/ukmAll?ukmName=FUTSAL")
+      .get("http://localhost:8080/api/recuitmens/ukmAll?ukmName=GMPA")
       .then((response) => this.setRecuitmens(response.data))
       .catch((error) => console.log(error));
 

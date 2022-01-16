@@ -1,5 +1,5 @@
 <template>
-    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse" style="background-color: #021729 !important">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse vh-100" style="background-color: #021729 !important">
       <div class="position-sticky pt-3">
         <ul class="nav flex-column">
           <li class="nav-item">
@@ -16,61 +16,61 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">
+            <a class="nav-link text-white" href="/dance">
               <font-awesome-icon icon="walking" />
               Dance
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">
+            <a class="nav-link text-white" href="/gmpa">
               <font-awesome-icon icon="hiking" />
               GMPA
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">
+            <a class="nav-link text-white" href="/ec">
               <font-awesome-icon icon="language" />
               English Club
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">
+            <a class="nav-link text-white" href="/primdev">
               <font-awesome-icon icon="code" />
               Primdev
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">
+            <a class="nav-link text-white" href="/gamedev">
               <font-awesome-icon icon="laptop-code" />
               Gamedev
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">
+            <a class="nav-link text-white" href="/pmc">
               <font-awesome-icon icon="pray" />
               PMC
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">
+            <a class="nav-link text-white" href="/im">
               <font-awesome-icon icon="shopping-cart" />
               IM
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">
+            <a class="nav-link text-white" href="/esprime">
               <font-awesome-icon icon="gamepad" />
               Esprime
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">
+            <a class="nav-link text-white" href="/hipmi">
               <font-awesome-icon icon="dollar-sign" />
               HIPMI PT
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">
+            <a class="nav-link text-white" href="/musik">
               <font-awesome-icon icon="guitar" />
               Musik
             </a>
@@ -85,9 +85,9 @@
         </h6>
         <ul class="nav flex-column mb-2">
           <li class="nav-item">
-            <a class="nav-link text-white" href="/role">
+            <a class="nav-link text-white" href="/ukm">
               <font-awesome-icon icon="file" />
-              Role
+              UKM
             </a>
           </li>
           <li class="nav-item">

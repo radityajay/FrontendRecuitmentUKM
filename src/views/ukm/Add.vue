@@ -8,37 +8,26 @@
         <div
           class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
         >
-          <h1 class="h2">EDIT</h1>
+          <h1 class="h2">ADD</h1>
         </div>
 
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-6">
-              <form>
+              <form @submit.prevent="addUkm">
                 <div class="mb-3">
-                  <label for="exampleInputName" class="form-label">Username</label>
+                  <label for="name" class="form-label">Nama UKM</label>
                   <input
                     type="text"
+                    required
                     class="form-control"
-                    id="exampleInputName"
-                    placeholder="Admin"
-                    disabled
+                    id="name"
+                    name="name"
+                    v-model="ukm.name"
+                    placeholder="ESPRIME"
                   />
                 </div>
-                <div class="mb-3">
-                  <label for="exampleInputRole" class="form-label">Role</label>
-                  <select
-                    class="form-select"
-                    aria-label="Default select example"
-                    id="exampleInputRole"
-                  >
-                    <option selected disabled>Role</option>
-                    <option value="1">admin</option>
-                    <option value="2">mod</option>
-                    <option value="3">user</option>
-                  </select>
-                </div>
-                <router-link to="/futsal">
+                <router-link to="/ukm">
                   <button type="submit" class="btn btn-danger ms-2" style="float: right">Cancel</button>
                 </router-link>
                 <button type="submit" class="btn btn-success" style="float: right">Submit</button>
@@ -53,20 +42,41 @@
 </template>
 
 <script>
+import axios from "axios";
+
 import UserService from "../../services/user.service";
+// import UkmDataService from "../../services/UkmDataService";
 import SideBar from "../../components/SideBar.vue";
 import '../../js/scripts';
 
 
 export default {
-  name: "Edit",
+  name: "ADD",
   data() {
     return {
-      content: "",
+      ukm: {
+        id: null,
+        name: ""
+      },
     };
   },
   components: {
     SideBar
+  },
+  methods: {
+    addUkm() {
+      const ukm = {
+        id: this.ukm.id,
+        name: this.ukm.name
+      };
+
+      axios
+        .post("http://localhost:8080/api/ukms", ukm)
+        .then((response) => this.$router.push ("/ukm") (response))
+        .catch(function (error) {
+          console.log(error);
+        });
+    },
   },
   mounted() {
     UserService.getAdminBoard().then(
